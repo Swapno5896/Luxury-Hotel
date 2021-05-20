@@ -31,7 +31,7 @@ const ChooseUs = () => {
           INTERNET
         </Col>
         <Col xs={4} md={3}>
-          <FontAwesomeIcon ></FontAwesomeIcon> icon={faCocktail} />
+          <FontAwesomeIcon icon={faCocktail} />
           <br />
           DRINKS
         </Col>
