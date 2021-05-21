@@ -1,5 +1,15 @@
-.reviewImg{
-    height: 60px;
+#reviewImg{
+    height: 50px;
+border-radius: 30px;
+
+}
+.useName{
+    padding: 9px 26px;
+}
+.review-user{
+display:flex;
+padding-left: 26px;
+margin-bottom: 42px;
 }
 .reviewUser{
     padding: 0px 20px;

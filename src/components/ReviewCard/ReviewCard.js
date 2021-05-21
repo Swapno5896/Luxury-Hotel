@@ -10,38 +10,28 @@ import {
   Badge,
 } from "react-bootstrap";
 import "./ReviewCard.css";
+import usesrImg from '../../img-hotel/userImg.jpg'
 const ReviewCard = (props) => {
   const { title, text } = props.fd;
   return (
-    <Col xs={6} md={4}>
-      <Card style={{ width: "18rem" }}>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{text} </Card.Text>
-        </Card.Body>
-        <Row className='reviewUser'>
-          <Col sm={6}>
-          <Image
-          className='reviewImg'
-            src="https://i.ibb.co/gtbbq4B/photo-1489171078254-c3365d6e359f-370x210.jpg"
-            roundedCircle
-          />
-          </Col>
-          <Col sm={6}>
-        <h4>Swapno </h4>
-          </Col>
-        </Row>
-        {/* <div className="reviewImg">
-          <Image
-            src="https://i.ibb.co/gtbbq4B/photo-1489171078254-c3365d6e359f-370x210.jpg"
-            roundedCircle
-          />
-          <Badge pill variant="primary">
-            Primary
-          </Badge>{" "}
-        </div> */}
-      </Card>
-    </Col>
+    
+    <Card style={{ width: '18rem' }}>
+  <Card.Body>
+    <div className='review-user'>
+      <img id='reviewImg' src={usesrImg} alt="" />
+      <p className='useName'>fdsfsd</p>
+      {/* <Card.Title>{title}</Card.Title> */}
+    </div>
+ 
+
+  
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
+
+  </Card.Body>
+</Card>
   );
 };
 

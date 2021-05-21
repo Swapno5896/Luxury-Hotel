@@ -11,59 +11,89 @@ import {
   faUtensils,
   faSpa,
 } from "@fortawesome/free-solid-svg-icons";
-import './ChoosUs.css'
+import "./ChoosUs.css";
 const ChooseUs = () => {
   return (
-    <Container>
+    <Container >
       <Card.Text className="text-center">Why Choose Us</Card.Text>
       <Card.Text className="text-center">
         Of is appear in face creeping and whose don’t blessed. Female our herb
         you’ll female earth second moveth.
       </Card.Text>
 
-      <Row>
+      <Row class='choos-us'>
         <Col xs={4} md={3}>
-       
-          <FontAwesomeIcon  icon={faWifi} />
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faWifi} />
+            </span>
+            <br />
+            INTERNET
+          </p>
+        </Col>
+        <Col xs={4} md={3}>
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faCocktail} />
+            </span>
+            <br />
+            DRINKS
+          </p>
+        </Col>
+        <Col xs={4} md={3}>
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faConciergeBell} />
+            </span>
+            <br />
+            CONCIERGE
+          </p>
+        </Col>
+        <Col xs={4} md={3}>
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faSwimmer} />
+            </span>
+            <br />
+            POOL
+          </p>
+        </Col>
+        <Col xs={4} md={3}>
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faDumbbell} />
+            </span>
+            <br />
+            FITNESS
+          </p>
+        </Col>
 
-          <br />
-          INTERNET
+        <Col xs={4} md={3}>
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faSpa} />
+            </span>
+            <br />
+            LOUNDRY
+          </p>
         </Col>
         <Col xs={4} md={3}>
-        <FontAwesomeIcon  icon={faCocktail} />
-         
-          <br />
-          DRINKS
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faUtensils} />
+            </span>
+            <br />
+            RESTAURANT
+          </p>
         </Col>
         <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faConciergeBell} />
-          <br />
-          CONCIERGE
-        </Col>
-        <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faSwimmer} />
-          <br />
-          POOL
-        </Col>
-        <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faDumbbell} />
-          <br />
-          FITNESS
-        </Col>
-        <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faDumbbell} />
-          <br />
-          SPA
-        </Col>
-        <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faSpa} />
-          <br />
-          LOUNDRY
-        </Col>
-        <Col xs={4} md={3}>
-          <FontAwesomeIcon icon={faUtensils} />
-          <br />
-          RESTAURANT
+          <p>
+            <span className="icon">
+              <FontAwesomeIcon icon={faTshirt} />
+            </span>
+            <br />
+            RESTAURANT
+          </p>
         </Col>
       </Row>
     </Container>
