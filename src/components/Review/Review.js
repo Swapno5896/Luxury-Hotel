@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, Container, Row, Col, Card, Form } from "react-bootstrap";
+import { CardDeck, Container, Row, Col, Card, Form } from "react-bootstrap";
 import ReviewCard from "../ReviewCard/ReviewCard";
-
+import './Review.css'
 const Review = () => {
     const fakedata = [
         {title:'Hotello',text:` Land make every fill of she'd above fish blessed place. Fish i you together grass blessed. Night grass replenish have. Cattle tree seasons fifth winged there had. Fruit. Be meat creepeth forth firmament over very air i was brought moveth.Land make every fill of she'd above fish blessed place. Fish i you together grass blessed. Night grass replenish have. Cattle tree seasons fifth winged there had. Fruit. Be meat creepeth forth firmament over very air i was brought moveth.`},   
@@ -9,15 +9,16 @@ const Review = () => {
          {title:'Hotello',text:` Fruitful tree night saying firmament seed morning rule man creepeth be made had creeping let can't gathering his lesser. Upon they're seasons green day beast without form man be firmament years shall the appear moveth signs had.`}
     ]
   return (
-    <div>
+    <div className='review-container'>
       <Container>
       <Card.Text className="text-center">Customer Reviews</Card.Text>
 
         <Row>
+        <CardDeck>
             {
               fakedata.map(fd =><ReviewCard fd={fd}></ReviewCard>)
             }
-          
+          </CardDeck>
         </Row>
       </Container>
     </div>

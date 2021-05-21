@@ -1,6 +1,6 @@
 import React from "react";
-import { Form, Container, Row, Col, CardGroup,Card } from "react-bootstrap";
-
+import { Form, Container, Row, Col, CardDeck,Card } from "react-bootstrap";
+import './RoomSuit.css'
 import RoomSuitCard from "../RoomSuitCard/RoomSuitCard";
 import RoomSuitSideBar from "../RoomSuitSideBar/RoomSuitSideBar";
 const RoomSuit = () => {
@@ -37,23 +37,17 @@ const RoomSuit = () => {
       area: "75m",
       imgUrl:
         "https://i.ibb.co/xhRFHyb/Fotolia-163203222-Subscription-Monthly-M-370x210.jpg",
-    },
-    {
-      title: "Standart Economic Single",
-      subTitle:
-        "Economy Single Room is well-furnished guest rooms 11 square meters with the m...",
-      person: 4,
-      type: "king",
-      area: "75m",
-      imgUrl:
-        "https://i.ibb.co/9bgNk28/Fotolia-179700361-Subscription-Monthly-M-370x210.jpg",
-    },
+    }
   ];
   return (
-    <Container>
+  <div className='container'>
             <Card.Text className="text-center">Room and Suits</Card.Text>
-
-      <Row>
+            <CardDeck className="room-suit-container">
+            {fakeData.map((dt) => (
+              <RoomSuitCard dt={dt}></RoomSuitCard>
+            ))}
+         </CardDeck>
+      {/* <Row>
         <Col xs={12} md={10}>
           <CardGroup>
             {fakeData.map((dt) => (
@@ -64,8 +58,8 @@ const RoomSuit = () => {
         <Col xs={12} md={2}>
           <RoomSuitSideBar></RoomSuitSideBar>
         </Col>
-      </Row>
-    </Container>
+      </Row> */}
+    </div>
   );
 };
 
