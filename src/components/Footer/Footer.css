@@ -1,7 +1,13 @@
-.footer{
-    margin-top: 200px;
-    background-color: rgb(99, 99, 95);
+.footer-container{
+    display: flex;
+    margin: 2px 160px;
+    padding: 90px 0px;
+  
 }
-.footerCol{
-    opacity: 0.8;
+.footer-title{
+    font-size: 20px;
+}
+.footer-Hotello{
+    margin: 25px 33px;
+    width: 245px;
 }
