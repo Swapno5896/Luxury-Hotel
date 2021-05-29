@@ -19,15 +19,14 @@ const ReviewCard = (props) => {
   <Card.Body>
     <div className='review-user'>
       <img id='reviewImg' src={usesrImg} alt="" />
-      <p className='useName'>fdsfsd</p>
+      <p className='useName'>{title}</p>
       {/* <Card.Title>{title}</Card.Title> */}
     </div>
  
 
   
     <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+  {text}
     </Card.Text>
 
   </Card.Body>
