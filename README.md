@@ -1,1 +1,1 @@
-First joined project.
+hotel
